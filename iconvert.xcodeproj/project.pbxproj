@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADA67CD42B38A81B00C02D71 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = ADA67CD32B38A81B00C02D71 /* AlertToast */; };
 		ADF307832B37714E008E4931 /* iconvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF307822B37714E008E4931 /* iconvertApp.swift */; };
 		ADF307852B37714E008E4931 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF307842B37714E008E4931 /* ContentView.swift */; };
 		ADF307872B377151008E4931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF307862B377151008E4931 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA67CD42B38A81B00C02D71 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = iconvert;
+			packageProductDependencies = (
+				ADA67CD32B38A81B00C02D71 /* AlertToast */,
+			);
 			productName = iconvert;
 			productReference = ADF3077F2B37714E008E4931 /* iconvert.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = ADF307762B37714E008E4931;
+			packageReferences = (
+				ADA67CD22B38A81B00C02D71 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = ADF307802B37714E008E4931 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,18 +431,20 @@
 				CODE_SIGN_ENTITLEMENTS = iconvert/iconvert.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"iconvert/Preview Content\"";
 				DEVELOPMENT_TEAM = SPWQRB7M9L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jxhug.iconvert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -450,18 +460,20 @@
 				CODE_SIGN_ENTITLEMENTS = iconvert/iconvert.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"iconvert/Preview Content\"";
 				DEVELOPMENT_TEAM = SPWQRB7M9L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jxhug.iconvert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -581,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADA67CD22B38A81B00C02D71 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADA67CD32B38A81B00C02D71 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA67CD22B38A81B00C02D71 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADF307772B37714E008E4931 /* Project object */;
 }
