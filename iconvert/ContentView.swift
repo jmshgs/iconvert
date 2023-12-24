@@ -162,13 +162,11 @@ struct ContentView: View {
                             Image(systemName: "arrow.triangle.2.circlepath")
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 25, weight: .bold))
-                                .symbolRenderingMode(.palette)
                                 .symbolEffect(.bounce, value: convertingImage)
                         } else {
                             Image(systemName: "arrow.triangle.2.circlepath")
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 25, weight: .bold))
-                                .symbolRenderingMode(.palette)
                         }
                         Text("convert")
                             .foregroundColor(Color.white)
