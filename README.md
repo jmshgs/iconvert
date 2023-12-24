@@ -10,4 +10,4 @@ basically the app is just a fancy wrapper for the [sips](https://ss64.com/osx/si
 
 ### roadmap
 
-other tools will be coming soon like batch image converting and resizing. or maybe not i have other things to do
+other tools will be coming soon like batch image converting and resizing. or maybe not i have other things to do :D
